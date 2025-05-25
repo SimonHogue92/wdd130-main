@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+
+
+
+
+
+
+
+
+
 /* General body styles */
 body {
-  background-color: black; /* Sets the background color for the entire page */
+  background-color: #5B2333; /* Sets the background color for the entire page */
+  font-family: Anton, Smooch Sans, Helvetica, sans-serif; /* Sets the font family for the body text */
+  font-size: 22px; /* Sets the base font size for the body text */
+  margin: 0; /* Removes default margin around the body */
+  padding: 0; /* Removes default padding around the body */
 }
-
+h2 {
+  margin: 0;
+}
 /* Main content wrapper */
 #content {
   max-width: 1600px; /* Limits the maximum width of the main content area */
@@ -11,45 +29,58 @@ body {
 
 /* Header styles */
 header {
-  background-color: black; /* Sets the background color for the header */
+  background-color: #5B2333; /* Sets the background color for the header */
 }
 .logo {
     width: 80px; /* Sets the width of the logo image */
 }
+#logo_link {
+  padding-top: 5px;
+}
 .icon {
     width: 80px; /* Sets the width of the icon image */
+    padding-top: 10px;
 }
 
 /* Navigation styles */
 nav a {
   text-align: center; /* Centers the text within navigation links */
-  color: yellow; /* Sets the text color for navigation links */
+  color: #f7f4f3; /* Sets the text color for navigation links */
   text-decoration: none;
+  padding: 35px; /* Adds padding around navigation links */
 }
 
 nav a:hover {
-  background-color: blue; /* Changes background color of nav links on hover */
-  color: yellow; /* Keeps text color of nav links yellow on hover */
+  background-color: #5B2333; /* Changes background color of nav links on hover */
+  color: #f7f4f3; /* Keeps text color of nav links yellow on hover */
 }
 
 /* Main content section styles */
 main section {
   text-align: center; /* Centers text within section elements inside the main tag */
 }
-
+main section img {
+  box-sizing: border-box;
+}
 /* Hero message styles (typically within main content) */
 #hero-msg h1,
 #hero-msg h4 {
   text-align: center; /* Centers the text for h1 and h4 elements within #hero-msg */
 }
-
+h1 {
+  color: #f7f4f3; /* Sets the text color for h1 elements */
+  font-size: 2.5em; /* Sets the font size for h1 elements */
+  font-family: Oi;
+}
 /* General heading styles */
 .home-title {
-  color: yellow; /* Sets the text color for elements with the class "home-title" */
+  color: #f7f4f3; /* Sets the text color for elements with the class "home-title" */
+  font-size: 2em; /* Sets the font size for elements with the class "home-title" */
+  margin-top: 10px
 }
 
 h4 { /* General style for all h4 elements */
-  color: yellow; /* Sets the text color for h4 elements */
+  color: #f7f4f3; /* Sets the text color for h4 elements */
 }
 
 /* Button container styles */
@@ -58,64 +89,79 @@ h4 { /* General style for all h4 elements */
 }
 
 /* Specific button styles */
-.book {
-  background-color: black; /* Sets background for "book" button */
-  color: yellow; /* Sets text color for "book" button */
+.book, .join {
+  background-color: #F24333; /* Sets background for "book" button */
+  color: #f7f4f3; /* Sets text color for "book" button */
   text-decoration: none;
+  font-size: 18px; /* Sets font size for "book" button */
+  padding: 15px 30px;   
+  margin-top: 50px; /* Adds top margin to "book" button */ 
+  border-radius: 5px; /* Rounds the corners of the "book" button */
 }
-
+ 
 .book:hover {
-  background-color: black; /* Keeps background for "book" button on hover (could be changed for effect) */
-  color: yellow; /* Keeps text color for "book" button on hover (could be changed for effect) */
+  background-color: #5B2333; /* Keeps background for "book" button on hover (could be changed for effect) */
+  color: #f7f4f3; /* Keeps text color for "book" button on hover (could be changed for effect) */
 }
-
-.join {
-  background-color: black; /* Sets background for "join" button */
-  color: yellow; /* Sets text color for "join" button */
-  text-decoration: none;
-}
-
 .join:hover {
-  background-color: black; /* Keeps background for "join" button on hover (could be changed for effect) */
-  color: yellow; /* Keeps text color for "join" button on hover (could be changed for effect) */
+  background-color:#5B2333; /* Keeps background for "join" button on hover (could be changed for effect) */
+  color: #f7f4f3; /* Keeps text color for "join" button on hover (could be changed for effect) */
 }
 
 /* Message box styles (could be part of main content or sections) */
 .msg {
-  background-color: black; /* Sets background for message areas */
+  background-color: #5B2333; /* Sets background for message areas */
+  line-height: 1.5em; /* Sets line height for text within message areas */
+  padding: 35px;
 }
 
 .msg h2 {
-  color: yellow; /* Sets text color for h2 headings within message areas */
+  color: #f7f4f3; /* Sets text color for h2 headings within message areas */
 }
 
 .msg p {
-  color: yellow; /* Sets text color for paragraphs within message areas */
+  color: #f7f4f3; /* Sets text color for paragraphs within message areas */
+  font-size: .8em;
+  padding-bottom: 15px;  
 }
 
 /* Background element style (placement depends on its role in HTML) */
 #background {
   height: 725px; /* Sets a specific height for the background element */
-  background-color: black; /* Sets the background color for the element with id "background" */
+  background-color: #5B2333; /* Sets the background color for the element with id "background" */
 }
-
+.rivers-card {
+  margin: 200px; /* Adds margin around the rivers card */
+}
+.camping-card {
+  margin: 200px; /* Adds margin around the camping card */
+}
+.rapids-card {
+  margin: 200px; /* Adds margin around the rapids card */
+}
 /* Footer styles */
 footer {
-  background-color: black; /* Sets the background color for the footer */
-  color: yellow; /* Sets the default text color for the footer */
+  background-color: #5B2333; /* Sets the background color for the footer */
+  color: #f7f4f3; /* Sets the default text color for the footer */
+  padding: 25px 50px; /* Adds padding around the footer content */
 }
 
 footer a {
-  color: yellow; /* Sets the text color for links within the footer */
+  color: #f7f4f3; /* Sets the text color for links within the footer */
   text-decoration: none;
 }
-
+.card-img {
+  border: 10px solid #f7f4f3; /* Adds a solid border around images with class "card-img" */
+}
 footer a:hover {
-  color: blue; /* Changes text color of footer links on hover */
+  color: #f7f4f3; /* Changes text color of footer links on hover */
 }
 footer p {
   font-size: 1.2em;;
 }
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+  padding-top: 15px; /* Adds horizontal padding around each icon */
 }
