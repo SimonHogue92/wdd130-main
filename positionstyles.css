@@ -9,24 +9,24 @@
 }
 .red1 { 
   width: 100%; 
-  height: 100px; 
+  height: 200px; 
   background-color: red; 
   grid-column: 1/3;
 } 
 .green1 {
-  width: 200px; 
-  height: 200px; 
+  width: 400px; 
+  height: 400px; 
   background-color: green; 
 
 } 
 .yellow1 {
-  width: 200px; 
-  height: 200px; 
+  width: 400px; 
+  height: 400px; 
   background-color: gold; 
 } 
 .blue1 {
   width: 100%; 
-  height: 100px; 
+  height: 200px; 
   background-color: blue; 
   grid-column: 1/3;
 } 
@@ -42,7 +42,7 @@
   width: 100px; 
   height: 100px; 
   background-color: red; 
-  z-index: 4;
+  z-index: 1;
 } 
 .green2 { 
   width: 100px; 
@@ -50,7 +50,7 @@
   background-color: green; 
   grid-column: 2;
   grid-row: 2;
-  z-index: 3;
+  z-index: 2;
 } 
 .yellow2 {
   width: 100px; 
@@ -64,7 +64,7 @@
   width: 100px; 
   height: 100px; 
   background-color: blue; 
-  z-index: 1;
+  z-index: 4;
   grid-column: 4;
   grid-row: 4;
 } 
@@ -84,12 +84,12 @@
   grid-column: 1/3;
 } 
 .green3 {
-  width: 400px; 
+  width: 100%; 
   height: 200px; 
   background-color: green;
 } 
 .yellow3 {
-  width: 400px; 
+  width: 100% 
   height: 200px; 
   background-color: gold; 
 } 
