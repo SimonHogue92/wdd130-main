@@ -30,12 +30,20 @@ h2 {
 /* Header styles */
 header {
   background-color: #5B2333; /* Sets the background color for the header */
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
 }
 .logo {
     width: 80px; /* Sets the width of the logo image */
 }
 #logo_link {
   padding-top: 5px;
+  justify-self: center;
+  align-self: center;
 }
 .icon {
     width: 80px; /* Sets the width of the icon image */
@@ -62,10 +70,31 @@ main section {
 main section img {
   box-sizing: border-box;
 }
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
+}
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+#hero-img {
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
 /* Hero message styles (typically within main content) */
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
 #hero-msg h1,
 #hero-msg h4 {
   text-align: center; /* Centers the text for h1 and h4 elements within #hero-msg */
+  color: white;
 }
 h1 {
   color: #f7f4f3; /* Sets the text color for h1 elements */
@@ -124,7 +153,9 @@ h4 { /* General style for all h4 elements */
   font-size: .8em;
   padding-bottom: 15px;  
 }
-
+.home-grid {
+  display
+}
 /* Background element style (placement depends on its role in HTML) */
 #background {
   height: 725px; /* Sets a specific height for the background element */
